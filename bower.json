@@ -1,0 +1,26 @@
+{
+  "name": "djangular-api-utils",
+  "version": "0.0.1",
+  "homepage": "https://github.com/cristiangrojas/djangular-api-utils",
+  "authors": [
+    "Cristian Rojas <cristianguillermorojas@gmail.com>"
+  ],
+  "description": "A set of API utils to be used in Django (with django-rest-framework) & Angular.js applications.",
+  "main": "dist/djangular-api-utils.js",
+  "keywords": [
+    "django",
+    "angular",
+    "django-rest-framework",
+    "rest",
+    "api",
+    "utils"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

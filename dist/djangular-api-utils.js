@@ -64,16 +64,14 @@
       if( ! angular.isUndefined(getParams) ){
         var first = true;
         _.each(getParams, function(value, key){
-          if( ! angular.isUndefined(value) && value.length > 0 ){ // if the value is valid
-            // append ? or & to join params
-            url += (first === true) ? '?' : '&';
-            first = false;
+          // append ? or & to join params
+          url += (first === true) ? '?' : '&';
+          first = false;
 
-            url += '{key}={value}'.assign({
-              key: key,
-              value: value
-            });
-          }
+          url += '{key}={value}'.assign({
+            key: key,
+            value: value || ''
+          });
         });
       }
 

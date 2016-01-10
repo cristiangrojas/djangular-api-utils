@@ -1,6 +1,6 @@
 {
   "name": "djangular-api-utils",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A set of API utils to be used in Django (with django-rest-framework) & Angular.js applications.",
   "main": "index.js",
   "scripts": {

@@ -68,10 +68,7 @@
           url += (first === true) ? '?' : '&';
           first = false;
 
-          url += '{key}={value}'.assign({
-            key: key,
-            value: value || ''
-          });
+          url += key + '=' + value;
         });
       }
 

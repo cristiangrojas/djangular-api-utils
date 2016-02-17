@@ -35,7 +35,8 @@
 
   function API($window){
     var API = {
-      'makeURL': makeURL
+      'makeURL': makeURL,
+      'getIdFromApiUrl': getIdFromApiUrl
     };
 
     return API;
@@ -73,6 +74,11 @@
       }
 
       return url;
+    }
+
+    function getIdFromApiUrl(url){
+      // match the id part of the url /[id]/ and return without slash as a number
+      return parseInt(url.match(/\/(\d+)\//g)[0].replace('/', ''));
     }
   }
 })();
